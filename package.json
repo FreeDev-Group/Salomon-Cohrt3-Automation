@@ -1,0 +1,24 @@
+{
+  "name": "salomon-cohrt3-automation",
+  "version": "1.0.0",
+  "description": "This repository contains the automated end-to-end (E2E) testing suite for the **Student Survey Application**, built using Cypress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreeDev-Group/Salomon-Cohrt3-Automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/FreeDev-Group/Salomon-Cohrt3-Automation/issues"
+  },
+  "homepage": "https://github.com/FreeDev-Group/Salomon-Cohrt3-Automation#readme",
+  "devDependencies": {
+    "cypress": "^15.17.0"
+  }
+}
