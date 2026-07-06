@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/FreeDev-Group/Salomon-Cohrt3-Automation#readme",
   "devDependencies": {
-    "cypress": "^15.17.0"
+    "cypress": "^15.17.0",
+    "cypress-mochawesome-reporter": "^4.0.2"
   },
   "dependencies": {
     "ansi-escapes": "^7.3.0",
