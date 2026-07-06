@@ -13,7 +13,7 @@ describe('All Surveys Navigation', () => {
   it('should navigate to the All Surveys page', () => {
     cy.contains('a', 'All Surveys').click();
     cy.url().should('include', '/survey');
-    cy.contains('All Surveys').should('be.visible');
+    cy.contains('Archives: Surveys').should('be.visible');
   });
 
 });
