@@ -1,3 +1,4 @@
+import 'cypress-mochawesome-reporter/register';
 /// <reference types="Cypress" />
 describe('Password Recovery', () => {
   it('should allow a user to request a password reset', () => {

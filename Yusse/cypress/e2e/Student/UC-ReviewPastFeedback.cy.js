@@ -1,3 +1,4 @@
+import 'cypress-mochawesome-reporter/register';
 describe('Feedback History', () => {
 
   beforeEach(() => {

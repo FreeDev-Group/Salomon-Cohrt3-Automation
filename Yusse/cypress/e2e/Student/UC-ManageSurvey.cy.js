@@ -1,3 +1,4 @@
+import 'cypress-mochawesome-reporter/register';
 describe('All Surveys Navigation', () => {
   beforeEach(() => {
     // Log in first

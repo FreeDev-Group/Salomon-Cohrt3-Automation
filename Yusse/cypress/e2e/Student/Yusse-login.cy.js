@@ -1,3 +1,4 @@
+import 'cypress-mochawesome-reporter/register';
 /// <reference types="Cypress" />
 
 describe('Login', () => {

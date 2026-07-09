@@ -1,10 +1,10 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  reporter: 'cypress-mochawesome-reporter', // Ajout du reporter
   e2e: {
-    screenshotsFolder: 'cypress/mes-rapports/screenshots', // Personnalisation du dossier
-    video: true, // Activez aussi l'enregistrement vidéo si besoin
-    videosFolder: 'cypress/mes-rapports/videos',
-    // ...
+    setupNodeEvents(on, config) {
+      require('cypress-mochawesome-reporter/plugin')(on); // Activation du plugin
+    },
   },
 });
