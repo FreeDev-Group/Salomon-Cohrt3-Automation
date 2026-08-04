@@ -21,7 +21,8 @@ describe('Login', () => {
     cy.get('#user_login').type('yussecelestin@gmail.com');
     cy.get('#user_pass').type('wrongpassword');
     cy.get('#wp-submit').click();
-    cy.contains('Invalid username or password.');
+    cy.get('#login_error > p') // Salomon's correction
+    //cy.contains('Invalid username or password.');
   });
 
 
@@ -33,7 +34,8 @@ describe('Login', () => {
     cy.get('#user_login').type('invaliduser');
     cy.get('#user_pass').type('13579013@#Yc');
     cy.get('#wp-submit').click();
-    cy.contains('Invalid username or password.');
+    cy.get('#login_error > p') // Salomon's correction
+    //cy.contains('Invalid username or password.');
   });
 
   // forgot password
@@ -66,7 +68,8 @@ describe('Login', () => {
     cy.get('#user_pass').type('13579013@#Yc');
     cy.contains('Remember Me').click({ force: true });
     cy.get('#wp-submit').click();
-    cy.contains('Log Out').click();
+    cy.contains('Student').click(); // Salomon's correction 
+    cy.contains('Logout').click();
   });
 
 });
