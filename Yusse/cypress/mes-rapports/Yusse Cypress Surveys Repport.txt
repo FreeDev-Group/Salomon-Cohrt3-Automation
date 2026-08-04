@@ -1,0 +1,273 @@
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        15.17.0                                                                        │
+  │ Browser:        Electron 138 (headless)                                                        │
+  │ Node Version:   v24.16.0 (C:\Program Files\nodejs\node.exe)                                    │
+  │ Specs:          6 found (UC-CreateAccount.cy.js, UC-Login.cy.js, UC-ManageSurvey.cy.js, UC-Pas │
+  │                 swordRecovery.cy.js, UC-ProvideFeedback.cy.js, UC-ReviewPastFeedback.cy.js)    │
+  │ Searched:       cypress/e2e/**/*.cy.{js,jsx,ts,tsx}                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+Remove output folder C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\reports\html
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  UC-CreateAccount.cy.js                                                          (1 of 6)
+
+
+  Account Registration
+    1) should create a new account successfully
+
+
+  0 passing (44s)
+  1 failing
+
+  1) Account Registration
+       should create a new account successfully:
+     AssertionError: Timed out retrying after 4000ms: expected '<div.notice.notice-info.message.register>' to contain 'Registration complete. Please check your email.'
+      at Context.eval (webpack://salomon-cohrt3-automation/./cypress/e2e/Student/UC-CreateAccount.cy.js:13:23)
+
+
+
+[mochawesome] Report JSON saved to C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\reports\html\.jsons\mochawesome.json
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      0                                                                                │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     44 seconds                                                                       │
+  │ Spec Ran:     UC-CreateAccount.cy.js                                                           │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\     (1280x720)
+     screenshots\UC-CreateAccount.cy.js\Account Registration -- should create a new a               
+     ccount successfully (failed).png                                                               
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  UC-Login.cy.js                                                                  (2 of 6)
+
+
+  Login
+    √ should allow a user to log in (16433ms)
+    1) should display an error message for invalid password
+    2) should display an error message for invalid username
+    √ should allow a user to reset their password
+    3) should display an error message for empty fields
+    4) should allow a user to log out
+
+
+  2 passing (1m)
+  4 failing
+
+  1) Login
+       should display an error message for invalid password:
+     AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Invalid username or password.' but never did.
+      at Context.eval (webpack://salomon-cohrt3-automation/./cypress/e2e/Student/UC-Login.cy.js:24:7)
+
+  2) Login
+       should display an error message for invalid username:
+     AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Invalid username or password.' but never did.
+      at Context.eval (webpack://salomon-cohrt3-automation/./cypress/e2e/Student/UC-Login.cy.js:36:7)
+
+  3) Login
+       should display an error message for empty fields:
+     AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Please enter a username and password.' but never did.
+      at Context.eval (webpack://salomon-cohrt3-automation/./cypress/e2e/Student/UC-Login.cy.js:57:57)
+
+  4) Login
+       should allow a user to log out:
+     AssertionError: Timed out retrying after 4000ms: Expected to find content: 'Log Out' but never did.
+      at Context.eval (webpack://salomon-cohrt3-automation/./cypress/e2e/Student/UC-Login.cy.js:69:7)
+
+
+
+[mochawesome] Report JSON saved to C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\reports\html\.jsons\mochawesome_001.json
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        6                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      4                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  4                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     1 minute, 14 seconds                                                             │
+  │ Spec Ran:     UC-Login.cy.js                                                                   │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+  (Screenshots)
+
+  -  C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\     (1280x720)
+     screenshots\UC-Login.cy.js\Login -- should display an error message for invalid                
+     password (failed).png                                                                          
+  -  C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\     (1280x720)
+     screenshots\UC-Login.cy.js\Login -- should display an error message for invalid                
+     username (failed).png                                                                          
+  -  C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\     (1280x720)
+     screenshots\UC-Login.cy.js\Login -- should display an error message for empty fi               
+     elds (failed).png                                                                              
+  -  C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\     (1280x720)
+     screenshots\UC-Login.cy.js\Login -- should allow a user to log out (failed).png                
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  UC-ManageSurvey.cy.js                                                           (3 of 6)
+
+
+  All Surveys Navigation
+    √ should navigate to the All Surveys page (10005ms)
+
+
+  1 passing (14s)
+
+[mochawesome] Report JSON saved to C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\reports\html\.jsons\mochawesome_002.json
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     13 seconds                                                                       │
+  │ Spec Ran:     UC-ManageSurvey.cy.js                                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  UC-PasswordRecovery.cy.js                                                       (4 of 6)
+
+
+  Password Recovery
+    √ should allow a user to request a password reset (7562ms)
+
+
+  1 passing (10s)
+
+[mochawesome] Report JSON saved to C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\reports\html\.jsons\mochawesome_003.json
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     10 seconds                                                                       │
+  │ Spec Ran:     UC-PasswordRecovery.cy.js                                                        │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  UC-ProvideFeedback.cy.js                                                        (5 of 6)
+
+
+  All Surveys Navigation
+    √ should navigate to the All Surveys page (11937ms)
+
+
+  1 passing (15s)
+
+[mochawesome] Report JSON saved to C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\reports\html\.jsons\mochawesome_004.json
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     14 seconds                                                                       │
+  │ Spec Ran:     UC-ProvideFeedback.cy.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  UC-ReviewPastFeedback.cy.js                                                     (6 of 6)
+
+
+  Feedback History
+    √ should view completed surveys and export CSV (16346ms)
+
+
+  1 passing (19s)
+
+[mochawesome] Report JSON saved to C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\reports\html\.jsons\mochawesome_005.json
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     18 seconds                                                                       │
+  │ Spec Ran:     UC-ReviewPastFeedback.cy.js                                                      │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+Start generate report process
+Read and merge jsons from "C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\reports\html\.jsons"
+Copy media folder from "C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\screenshots" to "C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\reports\html\screenshots"
+Enhance report
+Create HTML report
+HTML report successfully created!
+C:\Users\YUSSE KASSA CELESTIN\Documents\Salomon-Cohrt3-Automation\Yusse\cypress\reports\html\index.html
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ×  UC-CreateAccount.cy.js                   00:44        1        -        1        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ×  UC-Login.cy.js                           01:14        6        2        4        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  UC-ManageSurvey.cy.js                    00:13        1        1        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  UC-PasswordRecovery.cy.js                00:10        1        1        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  UC-ProvideFeedback.cy.js                 00:14        1        1        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  UC-ReviewPastFeedback.cy.js              00:18        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ×  2 of 6 failed (33%)                      02:56       11        6        5        -        -  

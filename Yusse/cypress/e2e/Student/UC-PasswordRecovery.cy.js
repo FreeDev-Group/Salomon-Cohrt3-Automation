@@ -1,7 +1,8 @@
 import 'cypress-mochawesome-reporter/register';
 /// <reference types="Cypress" />
 describe('Password Recovery', () => {
-  it('should allow a user to request a password reset', () => {
+
+  it('PR02 - should allow a registered user to request a password reset', () => {
     cy.visit('https://student.michaelkentburns.com/');
     cy.contains('User').click();
     cy.contains('Login').click();
@@ -19,6 +20,7 @@ cy.task('getResetToken', 'yussecelestin@gmail.com').then((token) => {
   cy.get('#pass1').type('NouveauMotDePasse123');
   cy.get('#wp-submit').click();
 });
+    cy.contains('Check your email for the confirmation link, then visit the login page.').should('be.visible');
   });
 
 });

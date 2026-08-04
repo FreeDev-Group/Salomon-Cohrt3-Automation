@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-07-27T09:53:59.329Z",
+    "end": "2026-07-27T09:54:33.366Z",
+    "duration": 34037,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e315758d-6613-4437-86cd-a692fdf6f2e4",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Student\\UC-CreateAccount.cy.js",
+      "file": "cypress\\e2e\\Student\\UC-CreateAccount.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "971e6b82-44b6-4f61-affb-ca9cd0d44ad2",
+          "title": "Account Registration",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should create a new account successfully",
+              "fullTitle": "Account Registration should create a new account successfully",
+              "timedOut": null,
+              "duration": 25648,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\UC-CreateAccount.cy.js\\\\Account Registration -- should create a new account successfully (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.visit('https://student.michaelkentburns.com/');\ncy.contains('User').click();\ncy.contains('Register').click();\ncy.get('#user_login').type('Rachel');\ncy.get('#user_email').type('nabintucizarachel@gmail.com');\ncy.get('input[value=\"Register\"]').click();\ncy.get('.message').should('contain', 'Registration complete. Please check your email.');\nit('should display validation errors when submitting an username and email already existed', () => {\n  // Submit the form without existing username and email\n  cy.visit('https://student.michaelkentburns.com/');\n  cy.contains('User').click();\n  cy.contains('Register').click();\n  cy.get('#user_login').type('Rachel');\n  cy.get('#user_email').type('nabintucizarachel@gmail.com');\n  cy.get('input[value=\"Register\"]').click();\n  cy.get('#login_error').should('This username is already registered. Please choose another one.').and('This email address is already registered. Log in with this address or choose another one.');\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<div.notice.notice-info.message.register>' to contain 'Registration complete. Please check your email.'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div.notice.notice-info.message.register>' to contain 'Registration complete. Please check your email.'\n    at Context.eval (webpack://salomon-cohrt3-automation/./cypress/e2e/Student/UC-CreateAccount.cy.js:13:23)",
+                "diff": null
+              },
+              "uuid": "67453190-cd52-47f6-9c03-832a6fd17aba",
+              "parentUUID": "971e6b82-44b6-4f61-affb-ca9cd0d44ad2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "67453190-cd52-47f6-9c03-832a6fd17aba"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 25648,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.3.2"
+    }
+  }
+}
