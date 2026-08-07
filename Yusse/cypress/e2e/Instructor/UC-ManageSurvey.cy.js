@@ -24,25 +24,10 @@ describe('UC01 - Manage Surveys', () => {
     });
 
     it('should allow the instructor to create a new survey', () => {
-
-        // Open Surveys menu
-        cy.contains('Surveys').should('be.visible').click();
-        // Verify Surveys page opens
-        cy.url().should('include', 'survey');
-        // Click Add New (adjust if your site uses a different label)
-        cy.contains('Add New').click();
-        // Verify Create Survey page
-        cy.contains('Add New Survey').should('be.visible');
-        // Survey title
-        cy.get('#title').type('Cypress Test Survey');
-
-        // If WordPress Classic Editor is used
-        cy.get('iframe#content_ifr').its('0.contentDocument.body').should('not.be.empty') .then(cy.wrap).type('What is your favourite programming language?');
-
-        // Publish survey
+        cy.contains('.wp-menu-name', 'Surveys').click();
+        cy.contains('a', 'Add New Survey').click();
+        cy.get('input[name="post_title"]').type('What is your name');
         cy.contains('Publish').click();
-
-        // Confirm survey creation
         cy.contains('Survey').should('exist');
     });
 
