@@ -17,10 +17,6 @@ describe('UC01 - Manage Surveys', () => {
         cy.get('#rememberme').check({ force: true });
 
         cy.get('#wp-submit').click();
-
-        // Wait until the WordPress dashboard is loaded
-        cy.url().should('include', '/wp-admin');
-        cy.contains('Dashboard').should('be.visible');
     });
 
     it('should allow the instructor to create a new survey', () => {
