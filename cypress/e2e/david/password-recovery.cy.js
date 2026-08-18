@@ -13,6 +13,8 @@ cy.contains('Lost your password?').click();
     it('should enter a registered email address', () => {
 
   cy.get('#user_login').type('test@example.com');
+
+
     
 
 });
