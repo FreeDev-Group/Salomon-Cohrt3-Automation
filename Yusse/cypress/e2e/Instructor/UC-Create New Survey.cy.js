@@ -8,7 +8,7 @@ describe('UC01 - Manage Surveys', () => {
 
         cy.visit('https://student.michaelkentburns.com/');
 
-        cy.contains('User').click();
+        cy.contains('User').click(); 
         cy.contains('Login').click();
 
         cy.get('#user_login').should('be.visible').type('yucelestin.student@arts.ac.ug');
